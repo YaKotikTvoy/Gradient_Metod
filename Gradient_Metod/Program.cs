@@ -9,11 +9,10 @@ namespace Gradient_Metod
 {
 	internal class Program
 	{
-		// ПРИВЕТ АРТЕМ
 		//f(X0) = Math.Pow(X1, 2) + Math.Pow(Math.E, Math.Pow(X1, 2) + Math.Pow(X2, 2)) + 4 * X1 + 3 * X2  X1^(2) + 2.718281828^(X1^(2) + X2^(2)) + 4 * X1 + 3 * X2                          X0 = [1,1]
 		private static void Main(string[] args){
-			Metod_Gradient(new double[] { 1,1}, 1E-6, 0.1);
-			Console.ReadKey();
+			/*Metod_Gradient(new double[] { 1,1}, 1E-6, 0.1);
+			Console.ReadKey();*/
 		}
 		private static void Metod_Gradient(double []X0, double epsilome, double alpha) {
 			double [] Xkn = new double[] { X0[0], X0[1] };
@@ -22,7 +21,7 @@ namespace Gradient_Metod
 
 
 			for (int i = 0; Math.Abs(Xkn[0] - X0[0]) > epsilome && Math.Abs(Xkn[1] - X0[1]) > epsilome; i++) {
-				/*if (Func(X0[0], X0[1]) > Func(X0[0] - df_dX1(X0[0], X0[1]) * alpha, X0[1] - df_dX2(X0[0], X0[1]) * alpha)){
+				if (Func(X0[0], X0[1]) > Func(X0[0] - df_dX1(X0[0], X0[1]) * alpha, X0[1] - df_dX2(X0[0], X0[1]) * alpha)){
 					Xkn[0] = X0[0] - df_dX1(X0[0], X0[1]) * alpha;
 					Xkn[1] = X0[1] - df_dX2(X0[0], X0[1]) * alpha;
 				} else {
@@ -40,7 +39,7 @@ namespace Gradient_Metod
 					}
 					Xkn[0] = r2;
 					Xkn[1] = r1;
-				}*/
+				}
 				Xkn = Xk_Next(X0, alpha);
 				X0 = new double[] { Xkn[0], Xkn[1] };
 				Console.WriteLine($"Итерация {i + 1} : X1 = {Xkn[0]}, X2 = {Xkn[1]}.");
