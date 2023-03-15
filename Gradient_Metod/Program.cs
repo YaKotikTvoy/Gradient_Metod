@@ -9,6 +9,7 @@ namespace Gradient_Metod
 {
 	internal class Program
 	{
+		// ПРИВЕТ АРТЕМ
 		//f(X0) = Math.Pow(X1, 2) + Math.Pow(Math.E, Math.Pow(X1, 2) + Math.Pow(X2, 2)) + 4 * X1 + 3 * X2  X1^(2) + 2.718281828^(X1^(2) + X2^(2)) + 4 * X1 + 3 * X2                          X0 = [1,1]
 		private static void Main(string[] args){
 			Metod_Gradient(new double[] { 1,1}, 1E-6, 0.1);
