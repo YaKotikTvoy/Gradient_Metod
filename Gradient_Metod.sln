@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradient_Metod", "Gradient_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradient_Method2", "Gradient_Method2\Gradient_Method2.csproj", "{AE21B15D-94B6-4253-A18F-3DD78A816D27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradient_method3", "Gradient_method3\Gradient_method3.csproj", "{58AF0FAF-EBFF-4C32-82C3-AFE5C658A50A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AE21B15D-94B6-4253-A18F-3DD78A816D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE21B15D-94B6-4253-A18F-3DD78A816D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE21B15D-94B6-4253-A18F-3DD78A816D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AF0FAF-EBFF-4C32-82C3-AFE5C658A50A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AF0FAF-EBFF-4C32-82C3-AFE5C658A50A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AF0FAF-EBFF-4C32-82C3-AFE5C658A50A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AF0FAF-EBFF-4C32-82C3-AFE5C658A50A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
