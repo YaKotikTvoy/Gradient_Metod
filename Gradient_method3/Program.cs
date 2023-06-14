@@ -39,16 +39,13 @@ namespace Gradient_method3
 			//while (f(x1 - df_x1(x1, x2) * alpha, x2 - df_x2(x1, x2) * alpha) > f(x1, x2)) alpha *= 0.5;
 			return x2 - df_x2(x1, x2) * alpha;
 		}
-		private static double f(double x1, double x2) { 
-			//return Math.Pow(x1, 2) + Math.Pow(Math.E, Math.Pow(x1, 2) + Math.Pow(x2, 2)) + 4 * x1 + 3 * x2;
-			return Math.Pow(x1,2) + Math.Pow(x2,2);
+		private static double f(double x1, double x2) {
+			return Math.Pow(x1, 2) + Math.Pow(Math.E, Math.Pow(x1, 2) + Math.Pow(x2, 2)) + 4 * x1 + 3 * x2;
 		}
 		private static double df_x1(double x1, double x2) {
-			//return 2 * x1 + 2 * x1 * Math.Pow(Math.E, Math.Pow(x1, 2) + Math.Pow(x2, 2)) + 4;
 			return 2 * x1;
 		}
 		private static double df_x2(double x1, double x2) {
-			//return 2 * x2 * Math.Pow(Math.E, Math.Pow(x1, 2) + Math.Pow(x2, 2)) + 3;
 			return 2 * x2;
 		}
 	}
